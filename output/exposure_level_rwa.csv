@@ -1,0 +1,13 @@
+exposure_id,pd_12m,lgd_downturn,ead_central,ead_downturn,product_type,segment,industry,security_type,default_flag,expected_loss,capital_requirement,rwa,rwa_density
+EXP001,0.024,0.32,125000.0,125000.0,Amortising business term loan,SME,Manufacturing,General Security Agreement,0,960.0,12000.0,150000.0,1.2
+EXP002,0.061,0.41,76800.0,88400.0,Overdraft,SME,Retail,General Security Agreement,0,2210.8839999999996,27636.049999999996,345450.62499999994,3.9078124999999995
+EXP003,0.017,0.35,812000.0,856000.0,Revolving working capital line,Corporate,Wholesale,General Security Agreement,0,5093.200000000001,63665.00000000001,795812.5000000001,0.9296875000000001
+EXP004,0.032,0.29,3400000.0,3925000.0,Construction facility,Property,Real Estate,Commercial Property Mortgage,0,36424.0,455300.0,5691250.0,1.45
+EXP005,0.143,0.48,228000.0,258000.0,Trade finance line,SME,Import Export,Inventory and Receivables,1,17709.12,221364.0,2767050.0,10.725
+EXP006,0.041,0.31,2110000.0,2200000.0,Development facility,Property,Property Development,Commercial Property Mortgage,0,27962.0,349525.0,4369062.5,1.9859375
+EXP007,0.013,0.27,540000.0,540000.0,Equipment term loan,Corporate,Transport,Specific Equipment Security,0,1895.4,23692.5,296156.25,0.5484375
+EXP008,0.087,0.52,31000.0,40500.0,Cash flow revolver,SME,Hospitality,General Security Agreement,0,1832.2199999999998,22902.749999999996,286284.37499999994,7.068749999999999
+EXP009,0.029,0.44,510000.0,540000.0,Trade working capital line,Corporate,Import Export,Inventory and Receivables,0,6890.400000000001,86130.0,1076625.0,1.99375
+EXP010,0.121,0.46,145500.0,147750.0,Overdraft,SME,Services,General Security Agreement,1,8223.765,102797.0625,1284963.28125,8.696875
+EXP011,0.019,0.28,80000.0,80000.0,Amortising agribusiness loan,SME,Agriculture,General Security Agreement,0,425.6,5320.0,66500.0,0.83125
+EXP012,0.038,0.33,1437500.0,1600000.0,Land subdivision facility,Property,Property Development,Commercial Property Mortgage,0,20064.0,250800.0,3135000.0,1.959375

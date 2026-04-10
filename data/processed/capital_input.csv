@@ -1,0 +1,13 @@
+exposure_id,pd_12m,lgd_downturn,ead_central,ead_downturn,product_type,segment,industry,security_type,default_flag
+EXP001,0.024,0.32,125000.0,125000.0,Amortising business term loan,SME,Manufacturing,General Security Agreement,0
+EXP002,0.061,0.41,76800.0,88400.0,Overdraft,SME,Retail,General Security Agreement,0
+EXP003,0.017,0.35,812000.0,856000.0,Revolving working capital line,Corporate,Wholesale,General Security Agreement,0
+EXP004,0.032,0.29,3400000.0,3925000.0,Construction facility,Property,Real Estate,Commercial Property Mortgage,0
+EXP005,0.143,0.48,228000.0,258000.0,Trade finance line,SME,Import Export,Inventory and Receivables,1
+EXP006,0.041,0.31,2110000.0,2200000.0,Development facility,Property,Property Development,Commercial Property Mortgage,0
+EXP007,0.013,0.27,540000.0,540000.0,Equipment term loan,Corporate,Transport,Specific Equipment Security,0
+EXP008,0.087,0.52,31000.0,40500.0,Cash flow revolver,SME,Hospitality,General Security Agreement,0
+EXP009,0.029,0.44,510000.0,540000.0,Trade working capital line,Corporate,Import Export,Inventory and Receivables,0
+EXP010,0.121,0.46,145500.0,147750.0,Overdraft,SME,Services,General Security Agreement,1
+EXP011,0.019,0.28,80000.0,80000.0,Amortising agribusiness loan,SME,Agriculture,General Security Agreement,0
+EXP012,0.038,0.33,1437500.0,1600000.0,Land subdivision facility,Property,Property Development,Commercial Property Mortgage,0
