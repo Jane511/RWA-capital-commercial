@@ -1,0 +1,7 @@
+facility_id,borrower_id,segment,product_type,pd,lgd,ead,maturity,risk_weight,rwa,capital_requirement
+F001,B001,SME Cash Flow,term_loan,0.018,0.42,1040000,3.0,0.894,929760.0,97624.8
+F002,B002,SME Cash Flow,overdraft,0.052,0.58,742000,1.0,1.186,880012.0,92401.26
+F003,B003,Property Backed,commercial_mortgage,0.034,0.33,2220000,4.0,1.007,2235540.0,234731.7
+F004,B004,Working Capital,revolving_working_capital,0.026,0.47,1100000,2.5,0.968,1064800.0,111804.0
+F005,B005,Trade Finance,trade_finance,0.041,0.55,420000,1.5,1.098,461160.0,48421.8
+F006,B006,Contingent,guarantee,0.012,0.36,285000,2.0,0.786,224010.0,23521.05

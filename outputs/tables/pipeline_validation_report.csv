@@ -1,0 +1,22 @@
+check_name,status,detail
+required_output::rwa_by_facility.csv,True,present and non-empty
+required_output::rwa_by_segment.csv,True,present and non-empty
+required_output::capital_summary.csv,True,present and non-empty
+required_output::expected_loss_adjustment_summary.csv,True,present and non-empty
+non_negative::rwa_by_facility.csv::pd,True,all values non-negative
+non_negative::rwa_by_facility.csv::lgd,True,all values non-negative
+non_negative::rwa_by_facility.csv::ead,True,all values non-negative
+non_negative::rwa_by_facility.csv::risk_weight,True,all values non-negative
+non_negative::rwa_by_facility.csv::rwa,True,all values non-negative
+non_negative::rwa_by_facility.csv::capital_requirement,True,all values non-negative
+non_negative::rwa_by_segment.csv::total_ead,True,all values non-negative
+non_negative::rwa_by_segment.csv::total_rwa,True,all values non-negative
+non_negative::rwa_by_segment.csv::capital_requirement,True,all values non-negative
+non_negative::rwa_by_segment.csv::expected_loss,True,all values non-negative
+non_negative::capital_summary.csv::total_ead,True,all values non-negative
+non_negative::capital_summary.csv::total_rwa,True,all values non-negative
+non_negative::capital_summary.csv::capital_requirement,True,all values non-negative
+non_negative::capital_summary.csv::capital_ratio_assumption,True,all values non-negative
+non_negative::expected_loss_adjustment_summary.csv::expected_loss,True,all values non-negative
+non_negative::expected_loss_adjustment_summary.csv::capital_requirement,True,all values non-negative
+non_negative::expected_loss_adjustment_summary.csv::capital_after_el_adjustment,True,all values non-negative

@@ -54,6 +54,7 @@ Desktop.ini
 # Local data (do not commit/upload)
 data/raw/
 data/upstream/
+data/interim/
 
 # Optional: if you don't want to commit local capital assumptions either
 # data/manual/

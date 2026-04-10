@@ -1,127 +1,55 @@
-# RWA & Capital Module
+# RWA-Capital-Credit-Risk
 
-This project is a simplified, bank-aligned capital framework for learning and portfolio analysis. It is not a regulatory capital engine and does not represent APRA-approved IRB models.
+## What this repo is
 
-The module takes PD, LGD, and EAD outputs and converts them into:
+This repo is the simplified capital-style engine at the end of the credit-risk stack for a bank-style Australian credit-risk portfolio demonstration. It uses public-data friendly and synthetic sample data only.
 
-- expected loss
-- capital requirement
-- risk-weighted assets
-- capital ratios
-- a simple stressed capital view
+## Where it sits in the full credit-risk stack
 
-The build follows the more specific of the two instruction PDFs in this folder and uses `lgd_downturn` plus `ead_downturn` in the EL, capital, and RWA formulas.
+Upstream inputs:
+- PD-and-Scorecard-Cashflow-Lending
+- LGD-Cashflow-and-Property-Lending
+- EAD-CCF-Cashflow-Lending
+- Expected-Loss-Engine-Australia
+- Stress-Testing-Credit-Portfolio
 
-## Core formulas
-
-```text
-Expected Loss = pd_12m x lgd_downturn x ead_downturn
-Capital Requirement = Expected Loss x 12.5
-RWA = Capital Requirement x 12.5
-CET1 Ratio = CET1 Capital / Total RWA
-Total Capital Ratio = Total Capital / Total RWA
-```
-
-## Repo structure
-
-```text
-data/
-  raw/
-    exposure_master.csv
-  upstream/
-    pd_output.csv
-    lgd_output.csv
-    ead_output.csv
-  manual/
-    capital_structure.csv
-  processed/
-    capital_input.csv
-notebooks/
-  01_prepare_capital_input.ipynb
-  02_calculate_el.ipynb
-  03_calculate_rwa.ipynb
-  04_capital_ratios.ipynb
-  05_stress_testing.ipynb
-output/
-  exposure_level_rwa.csv
-  portfolio_rwa_summary.csv
-  capital_ratio_summary.csv
-  stressed_capital_summary.csv
-src/
-  merge_inputs.py
-  calculate_el.py
-  calculate_rwa.py
-  capital_ratios.py
-  stress_testing.py
-  pipeline.py
-  run_pipeline.py
-tests/
-  test_pipeline.py
-README.md
-requirements.txt
-```
+Downstream consumers:
+- None - end of stack
 
 ## Inputs
 
-Expected files:
+The demo pipeline uses `data/raw/demo_portfolio.csv`, generated automatically when missing. The fields cover borrower IDs, facility IDs, segment, industry, product type, limit, drawn balance, collateral, PD, LGD, EAD, and borrower financial metrics.
 
-- `data/raw/exposure_master.csv`
-- `data/upstream/pd_output.csv`
-- `data/upstream/lgd_output.csv`
-- `data/upstream/ead_output.csv`
-- `data/manual/capital_structure.csv`
+## What the pipeline does
 
-If any of these files are missing, the pipeline generates deterministic demo inputs automatically so the repo runs from a clean checkout.
+It loads demo data, builds reusable credit features, runs the `rwa` engine, validates the outputs, and writes downstream-friendly CSV files.
 
 ## Outputs
 
-Running the pipeline produces:
-
-- `data/processed/capital_input.csv`
-- `output/exposure_level_rwa.csv`
-- `output/portfolio_rwa_summary.csv`
-- `output/capital_ratio_summary.csv`
-- `output/stressed_capital_summary.csv`
+- `outputs/tables/rwa_by_facility.csv`
+- `outputs/tables/rwa_by_segment.csv`
+- `outputs/tables/capital_summary.csv`
+- `outputs/tables/expected_loss_adjustment_summary.csv`
+- `outputs/tables/pipeline_validation_report.csv`
 
 ## How to run
 
-Install dependencies:
+```powershell
+python -m src.codex_run_pipeline
+```
+
+Or:
 
 ```powershell
-pip install -r requirements.txt
+python scripts/run_codex_pipeline.py
 ```
 
-Run the full pipeline:
+## Limitations and synthetic-data note
 
-```powershell
-python src/run_pipeline.py
-```
+- Demo data is synthetic and not confidential bank data.
+- Thresholds, overlays, and formulae are transparent portfolio-demonstration assumptions.
+- Production use would require governed source data, calibration, model validation, and approval.
 
-Regenerate the demo inputs first:
+## How it connects to the next repo
 
-```powershell
-python src/run_pipeline.py --refresh-demo-inputs
-```
-
-Run tests:
-
-```powershell
-pytest
-```
-
-## Stress scenario
-
-The repo includes one simple stress scenario from the instruction PDF:
-
-- PD up 30 percent
-- LGD up 10 percent
-
-The stressed summary includes both the `base` row and the stressed row so the deltas are easy to compare.
-
-## Interview summary
-
-Use this:
-
-```text
-I built a capital module that takes PD, LGD and EAD outputs from my credit models and converts them into expected loss, risk-weighted assets and capital ratios. This mirrors how banks translate credit risk into capital requirements under a Basel-style framework.
-```
+The exported CSV files are intentionally flat and can be copied to the next repository's `data/external` or replaced with validated production extracts.
