@@ -1,0 +1,5 @@
+reporting_date,segment,exposure,ead,expected_loss,stressed_loss,rwa,capital_amount,watchlist_count,recent_downgrade_count,realised_to_expected_ratio,migration_deterioration_share,concentration_commentary
+2026-03-31,Corporate,990000,1335000,9634.2,13006.17,1076492.02392,113031.6625116,0,0,0.9199995848124388,0.0,within concentration tolerance
+2026-03-31,Property,3850000,4330000,51726.5,69830.78,2901870.0283200005,304696.35297360003,1,1,1.12,0.5127020785219399,within concentration tolerance
+2026-03-31,SME,2020000,2184500,48450.22,65407.78999999999,1839824.8674000003,193181.61107700004,2,0,1.080000049535379,0.0,within concentration tolerance
+2026-03-31,Trade Finance,1040000,1520000,22913.0,30932.550000000003,1143385.22025,120055.44812624999,0,0,0.97,0.0,within concentration tolerance

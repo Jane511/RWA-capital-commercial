@@ -1,0 +1,28 @@
+reporting_date,dimension_type,dimension_value,exposure_amount,ead,portfolio_share,concentration_flag
+2026-03-31,industry,Accommodation and Food Services,350000,402500,0.0113956484194731,within_tolerance
+2026-03-31,industry,Commercial Real Estate,2100000,2220000,0.0628530173695162,within_tolerance
+2026-03-31,industry,Construction,690000,742000,0.0210076301298113,within_tolerance
+2026-03-31,industry,Import Export,450000,510000,0.0144392066929969,within_tolerance
+2026-03-31,industry,Manufacturing,980000,1040000,0.0294446567857193,within_tolerance
+2026-03-31,industry,Professional Services,0,285000,0.0080689684460865,within_tolerance
+2026-03-31,industry,Property Development,1750000,2110000,0.0597386786710267,within_tolerance
+2026-03-31,industry,Retail Trade,210000,420000,0.0118911113942328,within_tolerance
+2026-03-31,industry,Transport,540000,540000,0.015288571792585,within_tolerance
+2026-03-31,industry,Wholesale Trade,830000,1100000,0.0311433869848954,within_tolerance
+2026-03-31,product_type,Commercial Mortgage,2100000,2220000,0.0628530173695162,within_tolerance
+2026-03-31,product_type,Equipment Finance,540000,540000,0.015288571792585,within_tolerance
+2026-03-31,product_type,Guarantee,0,285000,0.0080689684460865,within_tolerance
+2026-03-31,product_type,Overdraft,1040000,1144500,0.0324032785492844,within_tolerance
+2026-03-31,product_type,Property Development Facility,1750000,2110000,0.0597386786710267,within_tolerance
+2026-03-31,product_type,Term Loan,980000,1040000,0.0294446567857193,within_tolerance
+2026-03-31,product_type,Trade Finance,210000,420000,0.0118911113942328,within_tolerance
+2026-03-31,product_type,Working Capital Revolver,1280000,1610000,0.0455825936778924,within_tolerance
+2026-03-31,geography,NSW,3560000,4535000,0.1283956908877281,within_tolerance
+2026-03-31,geography,QLD,2550000,2730000,0.0772922240625132,within_tolerance
+2026-03-31,geography,VIC,1250000,1564500,0.0442943899435172,within_tolerance
+2026-03-31,geography,WA,540000,540000,0.015288571792585,within_tolerance
+2026-03-31,top_obligor,Riverside Storage Trust,2100000,2220000,0.0628530173695162,within_tolerance
+2026-03-31,top_obligor,Urban Projects Developments,1750000,2110000,0.0597386786710267,within_tolerance
+2026-03-31,top_obligor,Southern Foods Wholesale,830000,1100000,0.0311433869848954,within_tolerance
+2026-03-31,top_obligor,Harbour Steel Pty Ltd,980000,1040000,0.0294446567857193,within_tolerance
+2026-03-31,top_obligor,Civic Build Group,690000,742000,0.0210076301298113,within_tolerance

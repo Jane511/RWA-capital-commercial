@@ -1,0 +1,11 @@
+reporting_date,facility_id,borrower_id,segment,internal_grade_previous,internal_grade_current,watchlist_flag,recent_downgrade_indicator,days_past_due,monitoring_commentary
+2026-03-31,FAC001,BOR001,SME,B,B,0,0,5,Within routine monitoring
+2026-03-31,FAC002,BOR002,SME,C,C,1,0,24,Watchlist monitoring
+2026-03-31,FAC003,BOR003,Property,B,C,0,1,12,Within routine monitoring
+2026-03-31,FAC004,BOR004,Trade Finance,B,B,0,0,8,Within routine monitoring
+2026-03-31,FAC005,BOR005,Trade Finance,C,C,0,0,18,Within routine monitoring
+2026-03-31,FAC006,BOR006,Corporate,A,A,0,0,0,Within routine monitoring
+2026-03-31,FAC007,BOR007,Corporate,A,A,0,0,0,Within routine monitoring
+2026-03-31,FAC008,BOR008,SME,D,D,1,0,42,Watchlist monitoring
+2026-03-31,FAC009,BOR009,Corporate,B,B,0,0,11,Within routine monitoring
+2026-03-31,FAC010,BOR010,Property,C,C,1,0,27,Watchlist monitoring

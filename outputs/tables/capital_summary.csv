@@ -1,2 +1,2 @@
-portfolio,total_ead,total_rwa,capital_requirement,capital_ratio_assumption
-demo_portfolio,5807000,5795282.0,608504.61,0.105
+reporting_date,portfolio,facility_count,borrower_count,total_exposure,total_ead,expected_loss,stressed_loss,total_rwa,capital_amount,capital_after_el_adjustment,capital_ratio_assumption,average_risk_weight,watchlist_exposure,recent_downgrade_exposure
+2026-03-31,commercial_demo_portfolio,10,10,7900000,9369500,132723.92,179177.29,6961572.13989,730965.07468845,770782.2506884501,0.105,0.7873989087500001,3254500,2220000

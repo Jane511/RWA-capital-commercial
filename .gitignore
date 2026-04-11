@@ -53,16 +53,9 @@ Desktop.ini
 
 # Local data (do not commit/upload)
 data/raw/
-data/upstream/
+data/external/
 data/interim/
-
-# Optional: if you don't want to commit local capital assumptions either
-# data/manual/
-
-# Generated outputs
-# Keep these if you want the repo to show example results; otherwise uncomment.
-# data/processed/
-# output/
+data/processed/
 
 # Instruction PDFs (do not upload)
 RWA Capital Module Instructions*.pdf

@@ -1,22 +1,15 @@
 check_name,status,detail
-required_output::rwa_by_facility.csv,True,present and non-empty
-required_output::rwa_by_segment.csv,True,present and non-empty
-required_output::capital_summary.csv,True,present and non-empty
-required_output::expected_loss_adjustment_summary.csv,True,present and non-empty
-non_negative::rwa_by_facility.csv::pd,True,all values non-negative
-non_negative::rwa_by_facility.csv::lgd,True,all values non-negative
-non_negative::rwa_by_facility.csv::ead,True,all values non-negative
-non_negative::rwa_by_facility.csv::risk_weight,True,all values non-negative
-non_negative::rwa_by_facility.csv::rwa,True,all values non-negative
-non_negative::rwa_by_facility.csv::capital_requirement,True,all values non-negative
-non_negative::rwa_by_segment.csv::total_ead,True,all values non-negative
-non_negative::rwa_by_segment.csv::total_rwa,True,all values non-negative
-non_negative::rwa_by_segment.csv::capital_requirement,True,all values non-negative
-non_negative::rwa_by_segment.csv::expected_loss,True,all values non-negative
-non_negative::capital_summary.csv::total_ead,True,all values non-negative
-non_negative::capital_summary.csv::total_rwa,True,all values non-negative
-non_negative::capital_summary.csv::capital_requirement,True,all values non-negative
-non_negative::capital_summary.csv::capital_ratio_assumption,True,all values non-negative
-non_negative::expected_loss_adjustment_summary.csv::expected_loss,True,all values non-negative
-non_negative::expected_loss_adjustment_summary.csv::capital_requirement,True,all values non-negative
-non_negative::expected_loss_adjustment_summary.csv::capital_after_el_adjustment,True,all values non-negative
+required_columns_present,True,Analytical base contains required columns
+duplicate_facility_keys,True,Facility keys are unique
+negative_balances,True,"Limit, drawn balance, and EAD are non-negative"
+ead_not_below_drawn,True,EAD is at least drawn balance
+ead_within_reasonable_limit,True,EAD stays within simplified demo tolerances
+pd_lgd_ranges,True,PD and LGD stay within zero to one
+monitoring_reporting_dates_present,True,Monitoring-linked files contain reporting dates
+watchlist_keys_match_portfolio,True,Watchlist facilities reconcile to the analytical base
+concentration_summary_valid,True,Concentration summary shares and dimensions are valid
+segment_rwa_reconciliation,True,Facility and segment RWA totals reconcile
+capital_summary_reconciliation,True,Facility totals reconcile to capital summary
+expected_loss_adjustment_reconciliation,True,Expected loss adjustment summary reconciles to facility output
+watchlist_summary_reconciliation,True,Watchlist summary reconciles to facility totals
+required_outputs_non_empty,True,All required output tables are populated

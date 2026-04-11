@@ -1,0 +1,11 @@
+reporting_date,borrower_id,facility_id,segment,industry,product_type,limit_amount,drawn_balance,pd,lgd,ead
+2026-03-31,BOR001,FAC001,SME,Manufacturing,Term Loan,1200000,980000,0.018,0.42,1040000
+2026-03-31,BOR002,FAC002,SME,Construction,Overdraft,800000,690000,0.052,0.58,742000
+2026-03-31,BOR003,FAC003,Property,Commercial Real Estate,Commercial Mortgage,2400000,2100000,0.034,0.33,2220000
+2026-03-31,BOR004,FAC004,Trade Finance,Wholesale Trade,Working Capital Revolver,1500000,830000,0.026,0.47,1100000
+2026-03-31,BOR005,FAC005,Trade Finance,Retail Trade,Trade Finance,600000,210000,0.041,0.55,420000
+2026-03-31,BOR006,FAC006,Corporate,Professional Services,Guarantee,950000,0,0.012,0.36,285000
+2026-03-31,BOR007,FAC007,Corporate,Transport,Equipment Finance,540000,540000,0.013,0.27,540000
+2026-03-31,BOR008,FAC008,SME,Accommodation and Food Services,Overdraft,500000,350000,0.087,0.52,402500
+2026-03-31,BOR009,FAC009,Corporate,Import Export,Working Capital Revolver,650000,450000,0.029,0.44,510000
+2026-03-31,BOR010,FAC010,Property,Property Development,Property Development Facility,2200000,1750000,0.041,0.31,2110000
