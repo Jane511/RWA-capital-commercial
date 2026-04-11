@@ -4,7 +4,7 @@
 
 - Demo portfolio records are synthetic and deterministic.
 - Demo upstream component files are generated locally when external repo outputs are unavailable.
-- Demo monitoring files are generated locally when `Portfolio-Monitoring-MIS` extracts are unavailable.
+- Demo monitoring files are generated locally when planned `portfolio-monitor-commercial` extracts are unavailable or unpublished on the public portfolio.
 - No hidden internal bank data, workspace-specific folder conventions, or OS-specific source paths are required.
 
 ## Simplified Capital Rules

@@ -12,7 +12,7 @@ UPSTREAM_REPOS = [
     "EAD-CCF-commercial",
     "expected-loss-engine-commercial",
     "stress-testing-commercial",
-    "Portfolio-Monitoring-MIS",
+    "portfolio-monitor-commercial",
 ]
 
 ROOT = Path(__file__).resolve().parents[1]
