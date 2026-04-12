@@ -14,14 +14,12 @@ Upstream inputs:
 - `EAD-CCF-commercial`
 - `expected-loss-engine-commercial`
 - `stress-testing-commercial`
-- `portfolio-monitor-commercial` (planned monitoring repo; not yet published on the public portfolio)
+- `portfolio-monitor-commercial`
 
 Downstream use:
 - capital review and portfolio reporting
 - management interpretation of watchlist and concentration effects
 - employer-ready presentation outputs at the end of the stack
-
-Some downstream modules are planned but not yet published on the public portfolio.
 
 ## Key outputs
 
@@ -68,4 +66,3 @@ python -m src.run_pipeline --refresh-demo-inputs --no-monitoring
 - All source extracts are synthetic or simulated when upstream files are unavailable.
 - Capital mechanics, expected-loss adjustments, and monitoring overlays are simplified for explainability.
 - The repo is intended for portfolio demonstration and reporting workflow review, not for production regulatory capital use.
-- Some referenced monitoring modules are planned but not yet published on the public portfolio.

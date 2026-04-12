@@ -12,7 +12,7 @@ The repo is designed for public portfolio presentation rather than production re
 
 1. Load or generate a facility-level portfolio input in `data/raw/`.
 2. Load or simulate component outputs for PD, LGD, EAD, expected loss, and stress testing from `data/external/`.
-3. Load or simulate monitoring outputs from `portfolio-monitor-commercial` (planned monitoring repo; not yet published on the public portfolio).
+3. Load monitoring outputs from `portfolio-monitor-commercial` when available, or simulate them for a self-contained demo run.
 4. Build a combined capital input snapshot in `data/interim/`.
 5. Build a monitoring-enriched analytical base table in `data/processed/`.
 6. Apply simplified capital-style risk weights, maturity adjustments, capital ratio assumptions, and expected-loss adjustment logic.
@@ -27,7 +27,7 @@ The repo is documented against these upstream repositories:
 - `EAD-CCF-commercial`
 - `expected-loss-engine-commercial`
 - `stress-testing-commercial`
-- `portfolio-monitor-commercial` (planned monitoring repo; not yet published on the public portfolio)
+- `portfolio-monitor-commercial`
 
 There is no required downstream modelling repo after this layer. Outputs are intended for portfolio review, reporting, and presentation use.
 
@@ -41,7 +41,7 @@ Expected monitoring files:
 
 ## How Monitoring Outputs Enrich Capital Reporting
 
-`portfolio-monitor-commercial` is positioned as a planned upstream reporting and validation layer that is not yet published on the public portfolio. In this repo it adds:
+`portfolio-monitor-commercial` is an upstream reporting and validation layer that adds:
 
 - watchlist exposure summaries next to capital metrics
 - downgrade and migration context for segment-level review
@@ -50,8 +50,6 @@ Expected monitoring files:
 - a monitoring-to-capital bridge table that sits alongside the core RWA outputs
 
 The monitoring extracts do not replace PD, LGD, EAD, or expected-loss inputs. They enrich interpretation and reporting around the capital outputs.
-
-Some downstream modules are planned but not yet published on the public portfolio.
 
 ## Key Outputs
 

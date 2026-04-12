@@ -57,7 +57,7 @@ The repo does not claim a full stressed capital adequacy framework. It shows how
 
 ## Role of Monitoring Outputs
 
-`portfolio-monitor-commercial` is a planned monitoring repo that is not yet published on the public portfolio. It adds post-origination monitoring context through:
+`portfolio-monitor-commercial` is part of the public commercial credit-risk stack. It adds post-origination monitoring context through:
 
 - watchlist flags and watchlist reasons
 - downgrade indicators and migration deterioration shares
