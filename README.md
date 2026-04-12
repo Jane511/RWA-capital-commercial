@@ -1,6 +1,6 @@
 # Commercial RWA & Capital Analytics Project
 
-This repository is the end-of-stack capital analytics layer in the commercial credit-risk workflow. It uses upstream PD, LGD, EAD, expected loss, stress testing, and monitoring inputs to produce explainable RWA tables, capital summaries, and monitoring-linked reporting outputs. The project is designed to show how validated risk outputs can be translated into a practical capital view for portfolio review.
+This repository is the end-of-stack capital analytics layer in the commercial credit-risk workflow. It uses upstream PD, LGD, EAD, expected loss, stress testing, and optional monitoring context to produce explainable RWA tables, capital summaries, and monitoring-linked reporting outputs. The project is designed to show how validated risk outputs can be translated into a practical capital view for portfolio review.
 
 ## What this repo is
 
@@ -14,9 +14,9 @@ Upstream inputs:
 - `EAD-CCF-commercial`
 - `expected-loss-engine-commercial`
 - `stress-testing-commercial`
-- `portfolio-monitor-commercial`
+- optional monitoring context from `portfolio-monitor-commercial`
 
-Downstream use:
+Downstream consumers:
 - capital review and portfolio reporting
 - management interpretation of watchlist and concentration effects
 - employer-ready presentation outputs at the end of the stack

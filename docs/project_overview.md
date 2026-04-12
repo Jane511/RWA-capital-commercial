@@ -1,4 +1,4 @@
-# Project Overview - RWA-capital-commercial
+# Project Overview
 
 `RWA-capital-commercial` is the end-of-stack capital analytics layer in the public commercial credit-risk workflow.
 
